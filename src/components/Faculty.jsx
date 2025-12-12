@@ -3,7 +3,6 @@ import React from 'react';
 const Faculty = () => {
     const faculty = [
         { name: "Prof.Patil", subject: "Physics", exp: "20+ Years" },
-        { name: "Prof.Patil", subject: "Chemistry", exp: "15+ Years" },
         { name: "Prof.Patil", subject: "Mathematics", exp: "18+ Years" },
         { name: "Dr. Patil", subject: "Biology", exp: "12+ Years" }
     ];
