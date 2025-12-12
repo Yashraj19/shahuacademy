@@ -2,15 +2,7 @@ import React from 'react';
 
 const Hero = () => {
     return (
-        <section className="container" style={{
-            padding: '120px 24px 80px',
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            gap: '60px',
-            minHeight: '80vh'
-        }}>
+        <section className="container hero-section">
             <div style={{ flex: 1, maxWidth: '600px' }}>
                 <span style={{
                     fontSize: '16px',
@@ -32,7 +24,7 @@ const Hero = () => {
                     Expert guidance aimed at clarity and results.
                 </p>
 
-                <div style={{ display: 'flex', gap: '16px' }}>
+                <div className="hero-buttons" style={{ display: 'flex', gap: '16px' }}>
                     <button style={{
                         backgroundColor: 'var(--text-primary)',
                         color: '#fff',
@@ -63,17 +55,7 @@ const Hero = () => {
             </div>
 
             {/* Visual Element / Shape */}
-            <div style={{
-                flex: 1,
-                height: '500px',
-                background: 'linear-gradient(135deg, var(--bg-primary) 0%, rgba(245, 158, 11, 0.1) 100%)',
-                borderRadius: 'var(--radius-xl)',
-                position: 'relative',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                border: '1px solid rgba(0,0,0,0.05)'
-            }}>
+            <div className="hero-visual">
                 {/* Placeholder for an actual image or graphic */}
                 <div style={{
                     width: '80%',
@@ -101,23 +83,6 @@ const Hero = () => {
                     filter: 'blur(20px)'
                 }} />
             </div>
-
-            <style>{`
-          @media (max-width: 960px) {
-              section.container {
-                  flex-direction: column;
-                  text-align: center;
-                  padding-top: 40px !important;
-              }
-              .text-body {
-                  margin-left: auto;
-                  margin-right: auto;
-              }
-              div[style*="display: flex"] {
-                  justify-content: center;
-              }
-          }
-      `}</style>
         </section>
     );
 };
