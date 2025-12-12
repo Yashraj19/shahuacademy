@@ -1,4 +1,5 @@
 import React from 'react';
+import { ENROLLMENT_FORM_URL } from '../config';
 
 const Hero = () => {
     return (
@@ -25,18 +26,26 @@ const Hero = () => {
                 </p>
 
                 <div className="hero-buttons" style={{ display: 'flex', gap: '16px' }}>
-                    <button style={{
-                        backgroundColor: 'var(--text-primary)',
-                        color: '#fff',
-                        padding: '16px 32px',
-                        borderRadius: '12px',
-                        fontSize: '16px',
-                        fontWeight: 600,
-                        border: 'none',
-                        boxShadow: 'var(--shadow-lg)'
-                    }}>
+                    <a
+                        href={ENROLLMENT_FORM_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                            backgroundColor: 'var(--text-primary)',
+                            color: '#fff',
+                            padding: '16px 32px',
+                            borderRadius: '12px',
+                            fontSize: '16px',
+                            fontWeight: 600,
+                            border: 'none',
+                            boxShadow: 'var(--shadow-lg)',
+                            textDecoration: 'none',
+                            display: 'inline-block',
+                            textAlign: 'center'
+                        }}
+                    >
                         Apply Now
-                    </button>
+                    </a>
                     <button style={{
                         backgroundColor: 'white',
                         color: 'var(--text-primary)',

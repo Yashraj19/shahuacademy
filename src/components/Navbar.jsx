@@ -1,4 +1,5 @@
 import React from 'react';
+import { ENROLLMENT_FORM_URL } from '../config';
 
 const Navbar = () => {
     return (
@@ -38,18 +39,25 @@ const Navbar = () => {
                     <a href="#faculty">Faculty</a>
                 </div>
 
-                <button style={{
-                    padding: '10px 24px',
-                    fontSize: '14px',
-                    fontWeight: 600,
-                    borderRadius: '999px',
-                    backgroundColor: 'var(--accent-primary)',
-                    color: '#fff',
-                    border: 'none',
-                    boxShadow: '0 4px 12px rgba(245, 158, 11, 0.3)'
-                }}>
+                <a
+                    href={ENROLLMENT_FORM_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                        padding: '10px 24px',
+                        fontSize: '14px',
+                        fontWeight: 600,
+                        borderRadius: '999px',
+                        backgroundColor: 'var(--accent-primary)',
+                        color: '#fff',
+                        border: 'none',
+                        boxShadow: '0 4px 12px rgba(245, 158, 11, 0.3)',
+                        textDecoration: 'none',
+                        display: 'inline-block'
+                    }}
+                >
                     Enroll
-                </button>
+                </a>
             </nav>
             <style>{`
                 @media (max-width: 768px) {
